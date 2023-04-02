@@ -22,14 +22,14 @@
     $computer_choice = $choices[rand(0, 2)];
 
     if (!in_array($choice, $choices)) {
-        echo "We're playing 'rock, paper, scissors'. Not 'rock, paper, $choice'.";
+        echo "invalid input: $choice'.\n";
         exit;
     }
 
-    $win_msg = "Congratulations! You won! The computer chose $computer_choice.";
+    $win_msg = "Congratulations! You won! The computer chose $computer_choice.\n";
 
     if ($choice == $computer_choice) {
-        echo "It's a tie! You both chose $choice.";
+        echo "It's a tie! You both chose $choice.\n";
     } else if ($choice == "rock" && $computer_choice == "scissors") {
         echo $win_msg;
     } else if ($choice == "paper" && $computer_choice == "rock") {
@@ -37,6 +37,6 @@
     } else if ($choice == "scissors" && $computer_choice == "paper") {
         echo $win_msg;
     } else {
-        echo "Sorry, you lost. The computer chose $computer_choice.";
+        echo "Sorry, you lost. The computer chose $computer_choice.\n";
     }
 ?>
