@@ -5,7 +5,13 @@
     // 1,2 번쨰 인자 필수
 
     // PHP 함수 중 하나인 in_array 함수는 값이 배열 안에 존재하는지 확인해주는 함수입니다.
-    // 
+
+    // The fgets() function returns a line from an open file.
+    // A single line read from the file on success, FALSE on EOF or error
+
+    // trim 은 양쪽에 존재하는 공백 및 문자열을 제거하는 역활을 합니다.
+    // The strtolower() function converts a string to lowercase.
+
     $stdin = fopen('php://stdin', 'r');
 
     echo "Choose rock, paper, or scissors: ";
