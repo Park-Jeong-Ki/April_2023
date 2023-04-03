@@ -19,7 +19,7 @@ void print_top_bottom(int width) {
     printf("\n");
 }
 
-void print_frame(char* str) {
+void do_print(char* str) {
     int max_len = find_max_len(strdup(str));
     int top_bottom_width = max_len + 4;
     int i, j;
@@ -44,6 +44,6 @@ int main(int argc, char** argv) {
     if (argc < 2)
 		return 1;
 	for (int i=1; i < argc; i++) {
-		print_frame(argv[i]);
+		do_print(argv[i]);
 	}
 }

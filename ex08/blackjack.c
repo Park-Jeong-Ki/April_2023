@@ -138,8 +138,8 @@ int main(int argc, char **argv)
     {
         score += get_card_value(deck[i], &score);
     }
-    if (score != 21)
-        printf("%d\n", score);
-    else
+    if (score == 21)
         puts("Blackjack!");
+    else
+        printf("%d\n", score);
 }
